@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*variables*/
+$item-font: 'Permanent Marker', cursive;
+/*fin variables*/
+
+header{
+    position: fixed;
+    transition: 0.5s;
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: end;
+    z-index: 1;
+}
+.header img{
+    width: 85px;
+    margin-right: 700px;
+}
+.navbar-nav{
+    font-family: 'Permanent Marker', cursive;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #3d882a;
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+/*inicio de formulario*/
+.form{
+    display: flex;
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(360deg, #050505e4 30%, transparent),url(../img/background-1.jpg), rgba(25, 203, 5, 0.82);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    .main{
+        width: 40%;
+        height: auto;
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.472), rgba(255, 255, 255, 0.365));
+       /* background-image: linear-gradient(to left, rgba(244, 67, 250, 0.269),rgba(235, 57, 149, 0.349), rgba(240, 81, 224, 0.094));*/
+        overflow: hidden;
+        padding: .7em;
+        border-radius: 1em;
+        margin-top: 100px; 
+        /*margin-left: 40px;*/
+        display: grid;
+        align-items: end;
+        grid-auto-rows: max-content;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        gap: .6em;
+        animation: mostrar 1.5s ease-in-out;
+        .main__contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5em;
+            padding: 0em .7em;
+            text-align: center;
+            .main__form{
+                display: grid;
+                justify-items: center;
+                gap: 1.5em;
+                .main__input{
+                    width: 80%;
+                    max-width: 500px;
+                    outline: none;
+                    border: none;
+                    padding: 1em;
+                    border-radius: .6em;
+                    font-family: $item-font;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                }
+                .enviar{
+                    cursor: pointer;
+                    background-color: transparent;
+                    border: 2px solid rgb(0, 0, 0);
+                    width: fit-content;
+                    display: block;
+                    padding: 10px 22px;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    color: rgb(1, 1, 1);
+                    font-family: $item-font;
+                    transition: all 500ms;
+                    &:hover{
+                        border: 2px solid #1d4115;
+                        color:#1d4115;
+                    }
+                }
+            }
+        }
+        .main__title{
+            font-family: $item-font;
+            letter-spacing: 5px;
+            font-size: 30px;
+        }
+    }
+}
+
+/*INICIO DE FOOTER*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: linear-gradient(360deg, #131415e4 30%, transparent), url(../img/background-4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    .footer__information{
+        width: 100%;
+        display: flex;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        ul{
+            width: 100%;
+            display: flex;
+            list-style: none;
+            li{
+                width: 100%;
+                text-align: center;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: 50px;
+                text-decoration: none;
+                color: #ffffff;
+                font-family: $item-font;
+                font-size: 20px;
+                &:hover{
+                    color: #000000;
+                    transition: all 600ms;
+                }
+            }
+        }
+    }
+    .footer__end{
+        height: 30%;
+        display: flex;
+        color: #646464;
+        font-size: 15px;
+        font-family: 'Poppins';
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
